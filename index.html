@@ -15,7 +15,7 @@
   <h1>
     Welcome to the DOM Challenge
   </h1>
-  <h1 id='counter'>
+  <h1 id='counter' value="0">
     0
   </h1>
   <button id='minus' > ➖ </button>
@@ -31,11 +31,22 @@
 
     <h3>Leave a comment</h3>
 
-    <form id="comment-form" action="">
+
+    <form id='comment-form'>
+      <div class="field">
+        <input id='new-comment' name='comment' type='text' placeholder='New Comment' />
+        <!-- giving our button the type of submit will cause it to tell the form to submit -->
+        <input type='submit' class='btn' value="Submit" />
+      </div>
+    </form>
+    
+    <!-- <form id="comment-form" action="">
       <input type='text' name="comment" id="comment-input" cols="30" rows="10">
       </br>
       <button id='submit'>submit</button>
-    </form>
+    </form> -->
+
+    
 
   </div>
 
